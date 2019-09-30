@@ -34,7 +34,7 @@ class adminController extends Controller
              $objeto->password= $request->contraseña;
              $objeto->estado= $request->estado;
              $objeto->save();
-             return redirect (route(""));
+              return redirect ("/pruebas");
     
     }
     

@@ -21,12 +21,7 @@ class adminController extends Controller
 
     // metodo de almacenado de registros
     public function store(Request $request){
-    
-            if ($request->id =="")
-                $objeto = new tbl_admin();
-            else
-                $objeto = tbl_admin::find($request->id);
-            
+             $objeto = new tbl_admin();
              $objeto->nombre= $request->nombreadmin;
              $objeto->apellido= $request->apellidoadmin;
              $objeto->cedula= $request->cedulaadmin;
